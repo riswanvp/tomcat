@@ -5,8 +5,8 @@ services:
     container_name: tomcat
     ports:
       - "8080:8080"
- #   volumes:
- #     - ./tomcat_data:/usr/local/tomcat
+    volumes:
+      - ./tomcat_data:/usr/local/tomcat/webapps
     restart: always
     networks:
       - tomcat-net
